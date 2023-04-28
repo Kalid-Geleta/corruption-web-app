@@ -60,16 +60,20 @@ ul li {
 text-decoration: none;
 }
 nav div i {
-    color:grey;
+    margin-right: 10px;
+    color:rgb(255, 255, 59);
 font-size: calc(3vw + 1.5rem);
 
 }
 nav div {
     width:20%;
 display: flex;
-justify-content: space-around;
+justify-content:center;
 align-items:center;
 
+}
+nav div h3 span{
+    color: yellow;
 }
 /* .container{
     width:100%;
@@ -334,7 +338,7 @@ left:-55%    }
 
     }
     .navigation.clicked div i{
-        color: white;
+        color: rgb(255, 255, 59);
     } 
     .navigation.clicked div h3{
         color:white;
