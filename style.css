@@ -53,9 +53,37 @@ justify-content: space-between;
 }
 ul{
     justify-content: space-evenly;
-    width:30%;
+    width:45%;
     display:flex;
 } 
+nav h3 span{
+    display: inline-block;
+    animation: try1 10s  1 both;
+}
+nav i{
+    display: inline-block;
+    animation: try2 2s 10s 1 backwards;
+
+}
+@keyframes try2{
+    0%{
+transform:translate(0%,0%);
+    }
+    100%{
+transform: translate(100%,-120%);
+    }
+
+}
+
+@keyframes try1 {
+    0%{
+        transform: rotate(0deg) scale(0);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+    
+}
 ul li {
     list-style: none;
 
