@@ -7,9 +7,14 @@ body{
     background-color:white ;
 }
 header{
-    position: relative;
+ 
+    position: fixed;
+    left:0;
+    right: 0;
+    top:0;
     min-height: 4em;
     background-color:white;
+    z-index:35;
    
 }
 header::after{
@@ -181,7 +186,7 @@ nav div h3 span{
 
  
  background-color: transparent;
- margin-top:3em;
+ margin-top:10.5em;
  z-index:-8;
  
 }
