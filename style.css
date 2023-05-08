@@ -13,6 +13,7 @@ header{
     right: 0;
     top:0;
     min-height: 4em;
+    
     background-color:white;
     z-index:35;
    
@@ -298,6 +299,86 @@ transform:scale(1.1);
    
     
 }
+.carsoul{
+ position: relative;
+    display: block;
+overflow: hidden;
+ height:80vh;
+    width:100%;
+    border:1px solid black;
+    
+
+}
+.imgcontainer{
+    position:relative;
+width:100%;
+    height:100%;
+
+   
+}
+.imglist{
+height: 100%;
+width: 100%;
+position:relative;
+transition: transform 2s 0.4s ease-in-out;
+}
+.imgitem{
+    position:absolute;
+    height: 100%;
+width: 100%;
+
+
+}
+img{
+    height:inherit;
+    width: inherit;
+    object-fit:cover;
+}
+button{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background-color:transparent;
+    border: none;
+    outline: none;
+    z-index:5;
+    
+   
+} 
+i{
+    color:yellow;
+    font-size :4rem;
+}
+.left_btn{
+left:0;
+}
+.right_btn{
+right:0;
+}
+.dot{
+    height: 2rem;
+    width: 2rem;
+    background-color: gray;
+    border-radius:50%;
+
+}
+.current-img{
+    background-color: yellow;
+}
+.navdots{
+    
+    position: absolute;
+    left:50%;
+  top:100%;
+    width:50%;
+    transform: translate(-50%,-140%);
+grid-template-columns:repeat(auto-fit ,minmax(2rem,1fr));
+grid-gap:10px;
+    display:grid;
+
+}
+
+
 @media screen and (max-width:675px) {
     .cards{
         width: 95%;
