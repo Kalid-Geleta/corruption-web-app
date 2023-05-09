@@ -8,7 +8,15 @@ imgitem=document.querySelector("imgitem");
 navdots=document.querySelector(".navdots")
 arraynavdots=Array.from(document.querySelector(".navdots").children)
 
+
+document.querySelector(".humburger").addEventListener("click",()=>{
+    console.log("no");
+    document.querySelector(".navigation").classList.toggle("clicked");
+    
+});
+
 imagewidth=arrayimglist[0].getBoundingClientRect().width;
+
 
 arrayimglist.forEach((items,index)=>{
     items.style.left=index*imagewidth+"px";
@@ -77,6 +85,15 @@ navdots.addEventListener("click",(e)=>{
    console.log(e.target)
 
 });
+// let i=0;
+// while(true){
+//     if(i=arrayimglist.length-1){
+//         i=0;
+//     }
+    
+
+// i++;
+// }
 
 console.log(navdots);
 
