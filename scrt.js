@@ -85,16 +85,47 @@ navdots.addEventListener("click",(e)=>{
    console.log(e.target)
 
 });
-// let i=0;
-// while(true){
-//     if(i=arrayimglist.length-1){
-//         i=0;
-//     }
+let i=0;
+async function speed (){
+
+while(true){
+   
+
+    await new Promise(res => setTimeout(res, 3000));
+
+
+        currentimg=document.querySelector(".imgitem.current-img");
+        currentdot=document.querySelector(".dot.current-img");
+
+        if(currentimg==arrayimglist[arrayimglist.length-1]){
+            currentimg=arrayimglist[0];
+            currentdot=arraynavdots[0];
+         
+
+        }
+        nextimg=currentimg.nextElementSibling;
+        nextdot=currentdot.nextElementSibling;
     
+        imglist.style.transform="translateX(-"+getComputedStyle(currentimg).left
+       
+        currentimg.classList.remove("current-img");
+        nextimg.classList.add("current-img");
+        currentdot.classList.remove("current-img");
+        nextdot.classList.add("current-img");
+      
+    
+    
+     
+        
 
-// i++;
-// }
 
-console.log(navdots);
+
+      
+  
+
+}
+}
+
+speed();
 
 
