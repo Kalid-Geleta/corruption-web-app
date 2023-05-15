@@ -573,7 +573,7 @@ a{
 .catagorybar span i{
     margin-left: 0.8rem;
     color:grey;
-    height: 2.557rem;
+ 
     font-size: 1.5rem;
     color:black;
 }
@@ -584,10 +584,11 @@ a{
     font-weight: 700;
 }
 .catagories-list{
+    position: relative;
     width:100%;
 }
 .catagory{
-position: relative;
+    z-index: 40;
     height: 2.557rem;
     width:100%;
    
@@ -622,21 +623,31 @@ position: relative;
 }
 .subcatagory{
     position: absolute;
-    top: 15px;
-    left:100%;
+    top: -2rem;
+    left:99%;
     height:532px;
     width: 1108px;
     display: none;
     background-color:white;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255)  ;
+    /* border: 1px solid black; */
+    box-shadow:2px 2px 10px 0.3px rgb(224, 224, 224) ;
 
 }
  .catagory:hover .subcatagory{
-    z-index:30;
+  z-index:6;
     display: block;
  }
-
+ .catagory:hover .catagorylinks{
+    width: 102%;
+ }
+ .catagory:hover {
+    box-shadow:1px 1px 5px 0.2px rgb(180, 179, 179) ;
+  
+   
+   
+ }
 @media screen and (max-width:675px) {
     .cards{
         width: 95%;
