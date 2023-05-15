@@ -5,7 +5,7 @@
 }
 body{
     background-color:rgb(242,242,242);
-   font-family: Open Sans,Roboto,Arial,Helvetica,sans-serif,SimSun;
+   
 }
 header{
  
@@ -34,7 +34,9 @@ header::after{
     transition: all 0.3s ease-in-out;
 }
 h3{
-    color:grey;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color:rgb(252, 128, 45);
     font-size:calc(3vw + 1.5rem);
 }
 .cool::before{
@@ -64,6 +66,7 @@ nav h3 span{
     animation: try1 10s  1 both;
 }
 nav i{
+    
     display: inline-block;
     animation: try2 2s 10s 1 backwards;
 
@@ -96,16 +99,18 @@ ul li {
 text-decoration: none;
 }
 nav div i {
+
     margin-right: 10px;
-    color:rgb(255, 255, 59);
-font-size: calc(3vw + 1.5rem);
+    color:rgb(250, 135, 59);
+font-size: calc(2.5vw + 0.5rem);
+transform: rotateY(180deg);
 
 }
 nav div {
     width:35%;
 display: flex;
 justify-content:center;
-align-items:center;
+align-items:baseline;
 
 }
 nav div h3 span{
@@ -413,7 +418,8 @@ grid-gap:10px;
     grid-column:1/4;
    width: 100%;
     grid-row:1/14;
-    background-color: yellow;
+    background-color: white;
+  
 }
 .info{
     border-radius: 10px;
@@ -547,7 +553,89 @@ a{
     line-height: 20px;
     vertical-align: middle;
 }
+.catagorybar{
+    position: relative;
+    height: 2.557rem;
+    width:100%;
 
+    
+}
+.catagorycontainer{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    display:flex;
+    align-items: center;
+}
+
+
+
+.catagorybar span i{
+    margin-left: 0.8rem;
+    color:grey;
+    height: 2.557rem;
+    font-size: 1.5rem;
+    color:black;
+}
+
+.catagorybar span h5{
+    margin-left: 0.8em;  
+    font-size: 14px;
+    font-weight: 700;
+}
+.catagories-list{
+    width:100%;
+}
+.catagory{
+position: relative;
+    height: 2.557rem;
+    width:100%;
+   
+}
+.catagorylinks{
+    position: relative;
+    height:2.557rem;
+    width:100%;
+}
+.catagory span{
+    position: absolute;
+    top:50%;
+   
+    transform: translateY(-50%);
+   
+    display: flex;
+    align-items: center;
+
+    
+}
+.catagories i,a{
+    
+    color:black;
+    margin-left: 0.8rem;
+}
+.catagorylinks i{
+    font-size: 1.5rem;
+    
+}
+.catagorylinks a{
+    font-size: 14px;
+}
+.subcatagory{
+    position: absolute;
+    top: 15px;
+    left:100%;
+    height:532px;
+    width: 1108px;
+    display: none;
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255)  ;
+
+}
+ .catagory:hover .subcatagory{
+    z-index:30;
+    display: block;
+ }
 
 @media screen and (max-width:675px) {
     .cards{
